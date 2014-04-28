@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Vertical Scrolling Web Page ~ www.arabirim.com.tr</title>
+        <link type="text/css" rel="stylesheet" href="library/css/verticalScrolling.css"/>
+        <link type="text/css" rel="stylesheet" href="library/css/style.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'/>
+    </head>
+    <body>
+        <div class="nav">
+            <div class="container">
+                <h1>
+                    <a href="#"><img src="library/images/logo.png" alt="logo"/></a>
+                </h1>
+                <ul>
+                    <li><a href="#" data-target=".screen1" data-effect="easeOutExpo" data-time="600">Screen 1</a></li>
+                    <li><a href="#" data-target=".screen2" data-effect="easeInCirc">Screen 2</a></li>
+                    <li><a href="#" data-target=".screen3" data-callback="myCallback()">Screen 3 (Callback)</a></li>
+                    <li><a href="#" data-target="screen4">Screen 4</a></li>
+                    <li><a href="#" data-target="0">Page up (Position)</a></li>
+                    <li><a href="#" data-target="1500">1500px (Position)</a></li>
+                </ul>
+            </div><!-- container end -->
+        </div><!-- nav end -->
+        <div class="screens screen1">
+            <h1 style='margin-top:27%;'>Lorem İpsum nedir ?</h1>
+            <p>
+                Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir <a href="#">matbaacının</a> bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
+            </p>
+        </div><!-- screen1 end -->
+        <div class="screens screen2">
+            <h1>Favorite music</h1>
+            <ul>
+                <li>Moloko -  <a href="http://www.youtube.com/watch?v=EiTRm7qMwlg" target="_blank">The Time Is Now</a></li>
+                <li>Oi Va Voi  -  <a href="http://www.youtube.com/watch?v=EiTRm7qMwlg" target="_blank">Refugee (ft. KT Tunstall) </a></li>
+                <li>The Cardigans  -  <a href="http://www.youtube.com/watch?v=ex2E4vyGem0&feature=kp" target="_blank">Erase and Rewind </a></li>
+                <li>Sting -  <a href="http://www.youtube.com/watch?v=KAzV2PxbzvA&list=PLD0FBBBFB13647DE7&index=15" target="_blank">Shape of My Heart </a></li>
+                <li>Florence + The Machine -  <a href="http://www.youtube.com/watch?v=KAzV2PxbzvA&list=PLD0FBBBFB13647DE7&index=15" target="_blank">Over The Love </a></li>
+                <li>Lykke Li -  <a href="http://www.youtube.com/watch?v=KAzV2PxbzvA&list=PLD0FBBBFB13647DE7&index=15" target="_blank"> Until We Bleed  </a></li>
+            </ul>
+        </div><!-- screen2 end -->
+        <div class="screens screen3">
+            <h1>Lorem İpsum nedir ?</h1>
+            <p>
+                Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir <a href="#">matbaacının</a> bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
+            </p>
+        </div><!-- screen3 end -->
+        <div class="screens screen4">
+            <h1>Favorite Sites</h1>
+            <ul>
+                <li>arabirim.com.tr  -  <a href="http://www.arabirim.com.tr" target="_blank">arabirim.com.tr</a></li>
+                <li>aycan.net -  <a href="http://www.aycan.net/" target="_blank">aycan.net</a></li>
+                <li>alanadlari.com  -  <a href="http://www.alanadlari.com" target="_blank">alanadlari.com</a></li>
+                <li>jQuery UI Easings -  <a href="http://api.jqueryui.com/easings/" target="_blank">api.jqueryui.com/easings/</a></li>
+            </ul>
+        </div><!-- screen4 end -->
+        <script type="text/javascript" src="library/js/jquery-1.10.1.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <script type="text/javascript" src="library/js/verticalScrolling.js"></script>
+        <script type="text/javascript">
+            function myCallback()
+            {
+                alert("Animation Complete, Screen3 myCallback function");
+            }
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
