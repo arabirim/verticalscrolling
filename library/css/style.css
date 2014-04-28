@@ -1,25 +1,138 @@
-body{font-family: 'Inconsolata';}
-a:focus{outline: 0;}
-.nav{width: 100%; position: fixed; top:0; left:0;  background: url('../images/menuBg.png') left top repeat-x;}
-    .container{width: 1000px; margin: 0px auto;}
-    .container h1{float: left; padding: 20px 0;}
-    .container ul{ height: 60px; float: right;}
-    .container ul li{font-size: 24px; color: #fff; background: url('../images/border.png') left center no-repeat; padding: 0 6px; float: left; margin: 14px  0 0 0;}
-    .container ul li:first-child{background: none;}
-        .container ul li a{color: inherit; text-decoration: none; text-align: center; display: block;  font-size: 14px; line-height: 16px; padding: 8px 10px; text-align: center; font-weight: 700; }
-        .container ul li a:hover{background: #c62d2d; box-shadow: inset 0 0 4px #de3d3d; border-radius: 2px;}
+body {
+    font-family: 'Inconsolata';
+}
 
+a:focus {
+    outline: 0;
+}
 
-.screen1{background: url('../images/8692689876_5a3f9b958f_h.jpg') left top no-repeat; background-size: cover;}
-.screen2{background: url('../images/8865584540_19f4e8f9cf_h.jpg') left top no-repeat; background-size: cover;}
-.screen3{background: url('../images/8203794182_4c016f5fa9_h.jpg') left top no-repeat; background-size: cover;}
-.screen4{background: url('../images/8865586006_5a16ded218_h.jpg') left top no-repeat; background-size: cover;}
-.screen5{background: url('../images/8969254495_871ba91dc5_h.jpg') left top no-repeat; background-size: cover;}
-.screen6{background: url('../images/9216004446_c8eaa90fee_h.jpg') left top no-repeat; background-size: cover;}
-    .screens h1{margin:20% 0 1% 10%; font-size: 40px; color: #fff; text-shadow: 0 0 4px #000; float: left;clear: both; }
-    .screens p{margin:2% 10%; font-size: 20px; color: #fff; text-shadow: 0 0 4px #000; line-height: 1.4; float: left; clear: both;}
-    .screens p a{color: #CCFF00; text-decoration: none;}
-    .screens p a:hover{color: #bbb;}
-    .screens li{margin:0% 10%; font-size: 20px; color: #fff; text-shadow: 0 0 4px #000; line-height: 1.4; float: left; clear: both;}
-    .screens li a{color: #CCFF00; text-decoration: none;}
-    .screens li a:hover{color: #bbb;}
+.nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url('../images/menuBg.png') left top repeat-x;
+}
+
+.container {
+    width: 1000px;
+    margin: 0px auto;
+}
+
+.container h1 {
+    float: left;
+    padding: 20px 0;
+}
+
+.container ul {
+    height: 60px;
+    float: right;
+}
+
+.container ul li {
+    font-size: 24px;
+    color: #fff;
+    background: url('../images/border.png') left center no-repeat;
+    padding: 0 6px;
+    float: left;
+    margin: 14px  0 0 0;
+}
+
+.container ul li:first-child {
+    background: none;
+}
+
+.container ul li a {
+    color: inherit;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 8px 10px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.container ul li a:hover {
+    background: #c62d2d;
+    box-shadow: inset 0 0 4px #de3d3d;
+    border-radius: 2px;
+}
+
+.screen1 {
+    background: url('../images/8692689876_5a3f9b958f_h.jpg') left top no-repeat;
+    background-size: cover;
+}
+
+.screen2 {
+    background: url('../images/8865584540_19f4e8f9cf_h.jpg') left top no-repeat;
+    background-size: cover;
+}
+
+.screen3 {
+    background: url('../images/8203794182_4c016f5fa9_h.jpg') left top no-repeat;
+    background-size: cover;
+}
+
+.screen4 {
+    background: url('../images/8865586006_5a16ded218_h.jpg') left top no-repeat;
+    background-size: cover;
+}
+
+.screen5 {
+    background: url('../images/8969254495_871ba91dc5_h.jpg') left top no-repeat;
+    background-size: cover;
+}
+
+.screen6 {
+    background: url('../images/9216004446_c8eaa90fee_h.jpg') left top no-repeat;
+    background-size: cover;
+}
+
+.screens h1 {
+    margin: 20% 0 1% 10%;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 0 0 4px #000;
+    float: left;
+    clear: both;
+}
+
+.screens p {
+    margin: 2% 10%;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 0 0 4px #000;
+    line-height: 1.4;
+    float: left;
+    clear: both;
+}
+
+.screens p a {
+    color: #CCFF00;
+    text-decoration: none;
+}
+
+.screens p a:hover {
+    color: #bbb;
+}
+
+.screens li {
+    margin: 0% 10%;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 0 0 4px #000;
+    line-height: 1.4;
+    float: left;
+    clear: both;
+}
+
+.screens li a {
+    color: #CCFF00;
+    text-decoration: none;
+}
+
+.screens li a:hover {
+    color: #bbb;
+}
