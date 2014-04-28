@@ -1,10 +1,14 @@
+if ( !window.idx )
+{
+    jQuery("html").scrollTop(1); var hst = jQuery("html").scrollTop()*1;
+    jQuery("html").scrollTop(0); window.idx = hst !== 1 ? "body" : "html";    
+}
+
 function verticalScrolling() {
     "use strict";
     jQuery('[data-target]').on('click', function (e) 
     {
         e.preventDefault();
-
-        jQuery('html').stop(true, false);
 
         var object = jQuery(this);
         var destination = object.attr('data-target');
@@ -41,8 +45,8 @@ function verticalScrolling() {
             jQuery('.activePage').removeClass('activePage');
             destination.addClass('activePage');
         }
-
-        jQuery('html').animate
+        
+        jQuery( window.idx ).stop( true,false ).animate
         (
             {
                 scrollTop: value
@@ -57,8 +61,8 @@ function verticalScrolling() {
 
     jQuery(window).resize(function ()
     {
-        jQuery( 'html' ).stop( true,false );
-        jQuery( 'html' ).scrollTop( jQuery( '.activePage' ).offset().top );
+        jQuery( 'body' ).stop( true,false );
+        jQuery( 'body' ).scrollTop( jQuery( '.activePage' ).offset().top );
     });
 }
 
