@@ -11,9 +11,7 @@ function verticalScrolling() { "use strict";
         var dataAnimateComplete = object.attr('data-animate-complete');
         
         if( dataAnimateBefore )
-        {
             new Function( dataAnimateBefore ) ();   
-        }
         
         // destination control
         if (destination.search(/^[\.#]/gi) > -1) {
@@ -27,6 +25,11 @@ function verticalScrolling() { "use strict";
             destination = jQuery('.' + object.attr('data-target'));
         }
 
+        if (typeof $.effects) {
+            
+        }
+        
+        
         var effects = [
             'swing', 'linear', 'easeInQuad', 'easeOutQuad', 'easeInOutQuad', 'easeInCubic',
             'easeOutCubic', 'easeInOutCubic', 'easeInQuart', 'easeOutQuart', 'easeInOutQuart',
@@ -52,9 +55,9 @@ function verticalScrolling() { "use strict";
                 scrollTop: value
             },
             time || 600,
-            effect === 'random' ?  effects[Math.floor((Math.random() * (effects.length)) + 1)] : effects[0],
+            ( jQuery.inArray(effect ,effects) > 0 ) ? effect : ( effect === 'random' ? effects[Math.floor( ( Math.random() * ( effects.length ) ) + 1 )] : effects[0] ),
             function () {
-                if(i === 1)
+                if( i === 1 )
                     if( dataAnimateComplete )
                         new Function( dataAnimateComplete )();
                 i++;
